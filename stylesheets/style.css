@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nobile&family=Nunito+Sans:opsz@6..12&family=Roboto&display=swap");
-
+/*colores: https://www.happyhues.co/palettes/17 */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,21 +8,29 @@
 body {
   font-family: "Nunito Sans", "Nobile", "Roboto";
   font-size: 20px;
-  background-color: #eff0f3;
+  color: #172c66;
+  background-color: #fef6e4;
 }
+h1{
+  color: #001858;
+}
+
 .header {
   padding: 0.67em 0;
   text-align: center;
   height: 550px;
-  background-color: #ff8e3c;
+  background-color: #f3d2c1;
 }
 .nav {
-  display: flex;
   height: 60px;
-  background-color: aqua;
-  
+  background-color: #fffffe;
+}
+
+.projects__section {
+  display: flex;
 }
 
 textarea {
   resize: none;
 }
+
