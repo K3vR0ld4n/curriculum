@@ -7,85 +7,119 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="header">
       <h1>Currículum Vitae</h1>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de mi</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Educación</a></li>
-        <li><a href="#">Experiencia</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+    <nav class="nav">
+      <div class="nav__links">
+        <a href="#header" class="nav__link nav__link--active">Inicio</a>
+        <a href="#about" class="nav__link">Acerca de mi</a>
+        <a href="#skills" class="nav__link">Habilidades</a>
+        <a href="#education" class="nav__link">Educación</a>
+        <a href="#experience" class="nav__link">Experiencia</a>
+        <a href="#projects" class="nav__link">Proyectos</a>
+        <a href="#contact" class="nav__link">Contacto</a>
+      </div>
     </nav>
-    <main>
-      <section id="informacion-personal">
+    <main class="main">
+      <section class="about" id="about">
         <h2>Acerca de mi</h2>
         <img
+          class="about__img"
           src="https://placehold.co/400"
           alt="Kevin Roldan"
           title="Kevin Roldan Pilozo"
           width="250px"
           height="250px"
         />
-        <ul>
-          <li>Nombre: <span>Kevin Roldan Pilozo</span></li>
-          <li>Edad: <span>20 años</span></li>
-          <li>Dirección: <span> Guayaquil-Ecuador</span></li>
-          <li>Teléfono: <span>+593 99 213 3544</span></li>
-          <li>Correo electrónico: <span>kroldan@espol.edu.ec</span></li>
+        <ul class="about__information">
+          <li class="information__item">
+            Nombre: <span>Kevin Roldan Pilozo</span>
+          </li>
+          <li class="information__item">Edad: <span>20 años</span></li>
+          <li class="information__item">
+            Dirección: <span> Guayaquil-Ecuador</span>
+          </li>
+          <li class="information__item">
+            Teléfono: <span>+593 99 213 3544</span>
+          </li>
+          <li class="information__item">
+            Correo electrónico: <span>kroldan@espol.edu.ec</span>
+          </li>
         </ul>
-        <p>
+        <p class="about__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           aliquam obcaecati ut iste, veritatis ab alias, assumenda molestias,
           harum ullam iure fugit? Distinctio id inventore tempore maxime
           blanditiis, deserunt voluptatum?
         </p>
       </section>
-      <section id="habilidades">
+      <section class="skills" id="skills">
         <h2>Habilidades</h2>
-        <ul>
-          <li>Lenguajes de programación: Python, Java</li>
-          <li>Bases de datos: MySQL, PostgreSQL</li>
-          <li>
+        <ul class="skills__list">
+          <li class="skills__item">Lenguajes de programación: Python, Java</li>
+          <li class="skills__item">Bases de datos: MySQL, PostgreSQL</li>
+          <li class="skills__item">
             Herramientas de desarrollo: Visual Studio Code, Git, NeatBeans
           </li>
-          <li>Otros: Inglés</li>
+          <li class="skills__item">Otros: Inglés</li>
         </ul>
       </section>
-      <section id="educacion">
+      <section class="education" id="education">
         <h2>Educación</h2>
-        <p>Grado: <span>Estudiante</span></p>
-        <p>
-          Institución: <span>Escuela Superior Politécnica del Litoral</span>
-        </p>
-        <p>Fechas: <span>2021 - ...</span></p>
-      </section>
-      <section id="experiencia">
-        <h2>Experiencia</h2>
-        <p>Cargo: <span>Desarrollador de software</span></p>
-        <p>Empresa: <span>Google</span></p>
-        <p>Fechas: <span>2023 - Presente</span></p>
-        <p>Descripción:</p>
-        <ul>
-          <li>Desarrollo de aplicaciones web</li>
-          <li>Mantenimiento de sistemas</li>
-          <li>Trabajo en equipo</li>
-        </ul>
-      </section>
-      <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div>
-          <img src="https://placehold.co/400" alt="proyecto-1" />
-          <img src="https://placehold.co/400" alt="proyecto-2" />
-          <img src="https://placehold.co/400" alt="proyecto-3" />
-          <img src="https://placehold.co/400" alt="proyecto-4" />
+        <div class="education__area">
+          <div class="area__name">
+            <p>Grado: <span>Estudiante</span></p>
+            <p>
+              Institución: <span>Escuela Superior Politécnica del Litoral</span>
+            </p>
+          </div>
+          <div class="area__description">
+            <p>Fechas: <span>2021 - ...</span></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              obcaecati distinctio fuga voluptates, dolorum consectetur dolorem
+              nulla fugiat placeat quidem rerum. Illo, illum consequatur
+              consectetur iure nam ut enim incidunt?
+            </p>
+          </div>
         </div>
       </section>
-      <section id="contacto">
+      <section class="experience" id="experience">
+        <h2>Experiencia de Trabajo</h2>
+        <div class="experience__section">
+          <div class="experience__item">
+            <div class="item__date">0000/00/00</div>
+            <div class="item__description">
+              <p>Lugar</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                nulla quas magnam et nobis id in cum perspiciatis. Doloremque
+                sequi labore enim. Et fugit minima harum? Doloremque fuga natus
+                magni!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects__section">
+          <div class="projects__item">
+            <img src="https://placehold.co/400" alt="proyecto-1" />
+          </div>
+          <div class="projects__item">
+            <img src="https://placehold.co/400" alt="proyecto-2" />
+          </div>
+          <div class="projects__item">
+            <img src="https://placehold.co/400" alt="proyecto-3" />
+          </div>
+          <div class="projects__item">
+            <img src="https://placehold.co/400" alt="proyecto-4" />
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
         <h2>Contacto</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad
@@ -93,15 +127,39 @@
           magnam placeat voluptate sapiente dolor sint tenetur incidunt
           temporibus quibusdam itaque officiis.
         </p>
-        <form action="">
-          <input type="text" name="" id="">
-          <input type="email" name="" id="">
-          <textarea  name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" name="" id="">
+        <form class="contact__form" action="">
+          <input class="form__input" type="text" name="" id="" />
+          <input class="form__input" type="email" name="" id="" />
+          <textarea
+            class="form__input"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input
+            class="form__input form__input--submit"
+            type="submit"
+            name=""
+            id=""
+          />
         </form>
       </section>
+      <section class="map" id="map">
+        <h2>Zona de Estudio</h2>
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651934657!2d-79.97045872618753!3d-2.1446259978362723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1697418872847!5m2!1ses-419!2sec"
+          width="1000"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>Copyright © 2023 Kevin Roldan</p>
     </footer>
   </body>
