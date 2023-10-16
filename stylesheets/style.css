@@ -1,4 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nobile&family=Nunito+Sans:opsz@6..12&family=Roboto&display=swap");
+
+* {
+  font-family: "Nunito Sans", "Nobile", "Roboto";
+  font-size: 20px;
+  background-color: #eff0f3;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
 textarea {
-    resize: none;
-  }
-  
+  resize: none;
+}
