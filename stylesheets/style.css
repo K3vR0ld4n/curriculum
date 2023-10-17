@@ -61,7 +61,7 @@ h5 {
 }
 
 section {
-  margin: 25px;
+  padding: 25px;
 }
 
 .about__information {
@@ -69,29 +69,81 @@ section {
   justify-content: center;
   margin: 20px;
   align-items: center;
-  
 }
 .information__div {
   flex: 1;
   margin: 30px;
-  
 }
-.information__div--left h4{
+.information__div--left h4 {
   text-align: right;
   margin: 10px 0px;
 }
-.information__div--right h4{
+.information__div--right h4 {
   text-align: left;
   margin: 10px 0px;
 }
 .about__description {
   text-align: justify;
 }
+
+.skills__list {
+  display: inline-block;
+  list-style-type: disc;
+  margin: 30px 50px;
+  padding: 0;
+}
+
+.skills__item {
+  margin-bottom: 20px;
+}
+
+.education {
+  background-color: #fffffe;
+}
+
+.experience {
+  background-color: #fffffe;
+}
+
+.projects {
+  background-color: #f3d2c1;
+}
 .projects__section {
   display: flex;
   flex-wrap: wrap;
 }
 
+.contact {
+  background-color: #fffffe;
+}
+.contact__form {
+  margin: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "textarea input"
+    "textarea input"
+    "textarea input";
+}
+
+.form__input {
+  background-color: #f3d2c1;
+  padding:  10px;
+}
+.form__input--submit{
+  background-color: #f582ae;
+}
 textarea {
+  grid-area: textarea;
   resize: none;
+}
+
+.map {
+ 
+  
+}
+
+.footer {
+  font-size: 15px;
+  text-align: center;
 }
