@@ -11,6 +11,8 @@ body {
   font-size: 20px;
   color: #172c66;
   background-color: #fef6e4;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -21,6 +23,11 @@ h5 {
   color: #001858;
   font-family: "Nunito Sans";
   text-align: center;
+}
+h4,
+h5,
+h6 {
+  text-align: inherit;
 }
 
 .header {
@@ -39,6 +46,7 @@ h5 {
   height: 100%;
   display: flex;
   justify-content: center;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .nav__link {
@@ -48,7 +56,6 @@ h5 {
   line-height: 4;
   font-weight: bold;
   color: #001858;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav__link:hover {
@@ -100,9 +107,69 @@ section {
 .education {
   background-color: #fffffe;
 }
+.education__area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+.area__element {
+  margin: 30px 0;
+  display: flex;
+}
+.area__name {
+  padding: 20px;
+  background-color: #8bd3dd;
+}
+.area__description {
+  padding: 20px;
+  background-color: #f582ae;
+}
 
 .experience {
   background-color: #fffffe;
+  display: block;
+  padding: 50px 25px;
+}
+.experience__section {
+  padding: 30px 0px;
+}
+.experience__item {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
+}
+.experience__item--left {
+  grid-template-areas: "a description b dateLeft c";
+  text-align: right;
+}
+.experience__item--right {
+  grid-template-areas: "a dateRight b description c";
+  text-align: left;
+}
+.item__description {
+  grid-area: description;
+}
+.item__date {
+  margin-top: 45px;
+}
+.item__date p {
+  background-color: #8bd3dd;
+  display: inline;
+  padding: 10px;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.item__date--left {
+  grid-area: dateLeft;
+  text-align: left;
+}
+.item__date--right {
+  grid-area: dateRight;
+  text-align: right;
 }
 
 .projects {
@@ -125,12 +192,11 @@ section {
     "textarea input"
     "textarea input";
 }
-
 .form__input {
   background-color: #f3d2c1;
-  padding:  10px;
+  padding: 10px;
 }
-.form__input--submit{
+.form__input--submit {
   background-color: #f582ae;
 }
 textarea {
@@ -139,8 +205,11 @@ textarea {
 }
 
 .map {
- 
-  
+  padding: 20px 0;
+}
+.map__iframe {
+  margin: 20px 0;
+  width: 100%;
 }
 
 .footer {
