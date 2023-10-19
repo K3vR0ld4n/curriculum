@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nobile&family=Nunito+Sans:opsz@6..12&family=Roboto&display=swap");
-/*colores: https://www.happyhues.co/palettes/17 */
+/*colores: https://www.happyhues.co/palettes/11 */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,8 +9,8 @@
 body {
   font-family: "Nobile", "Roboto", Archvio;
   font-size: 20px;
-  color: #172c66;
-  background-color: #fef6e4;
+  color: #716040;
+  background-color: #f9f4ef;
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #001858;
+  color: #020826;
   font-family: "Nunito Sans";
   text-align: center;
 }
@@ -34,7 +34,7 @@ h6 {
   padding: 0.67em 0;
   text-align: center;
   height: 500px;
-  background-color: #f3d2c1;
+  background-color: #8c7851;
 }
 
 .nav {
@@ -55,7 +55,7 @@ h6 {
   text-decoration: none;
   line-height: 4;
   font-weight: bold;
-  color: #001858;
+  color: #020826;
 }
 
 .nav__link:hover {
@@ -64,7 +64,7 @@ h6 {
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
-  color: #8bd3dd;
+  color: #f25042;
 }
 
 section {
@@ -118,11 +118,12 @@ section {
 }
 .area__name {
   padding: 20px;
-  background-color: #8bd3dd;
+  background-color: #0f4b6e;
+  color: #fffffe;
 }
 .area__description {
   padding: 20px;
-  background-color: #f582ae;
+  background-color: #eaddcf;
 }
 
 .experience {
@@ -151,12 +152,14 @@ section {
 }
 .item__date {
   margin-top: 45px;
+  
 }
 .item__date p {
-  background-color: #8bd3dd;
+  
   display: inline;
   padding: 10px;
-
+  background-color: #0f4b6e;
+  color: #fffffe;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -172,17 +175,19 @@ section {
   text-align: right;
 }
 
-.projects {
-  background-color: #f3d2c1;
+.projects, .contact, .map,.footer {
+  background-color: #8c7851;
+  color: #fffffe;
+}
+.projects h2, .contact h2, .map h2 {
+  color: #fffffe;
 }
 .projects__section {
   display: flex;
   flex-wrap: wrap;
 }
 
-.contact {
-  background-color: #fffffe;
-}
+
 .contact__form {
   margin: 20px;
   display: grid;
@@ -193,11 +198,23 @@ section {
     "textarea input";
 }
 .form__input {
-  background-color: #f3d2c1;
+  background-color: #eaddcf;
   padding: 10px;
+  color: #020826;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form__input::placeholder{
+  color:#020826;
 }
 .form__input--submit {
-  background-color: #f582ae;
+  background-color: #8c7851;
+  color: #fffffe;
+
 }
 textarea {
   grid-area: textarea;
@@ -205,14 +222,22 @@ textarea {
 }
 
 .map {
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 0;
+  
+
 }
 .map__iframe {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   width: 100%;
 }
 
 .footer {
+  
+  border: none;
   font-size: 15px;
   text-align: center;
+  padding: 20px 0;
+  
 }
