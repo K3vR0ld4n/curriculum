@@ -53,7 +53,6 @@ h6 {
   height: 60px;
   z-index: 100;
 }
-
 .nav__links {
   height: 100%;
   display: flex;
@@ -86,12 +85,19 @@ section {
 .about__information {
   display: flex;
   justify-content: center;
-  margin: 20px
+  margin: 20px;
   align-items: center;
+  
+}
+.img__profile {
+  width: 100%;
+  height: auto;
+
 }
 .information__div {
   flex: 1;
   margin: 30px;
+ 
 }
 .information__div--left h4 {
   text-align: right;
