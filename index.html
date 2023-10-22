@@ -18,6 +18,10 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -52,14 +56,14 @@
               <p>Guayaquil-Ecuador</p>
             </span>
           </div>
-          <div class="information__img">
+          <figure class="information__img">
             <img
               src="https://placehold.co/400"
               class="img__profile"
               alt="Kevin Roldan"
               title="Kevin Roldan Pilozo"
             />
-          </div>
+          </figure>
           <div class="information__div information__div--right">
             <span style="text-align: left">
               <h4>Teléfono</h4>
@@ -212,20 +216,56 @@
       <section class="projects" id="projects">
         <h2>Proyectos</h2>
         <div class="projects__section">
-          <div class="projects__item">
-            <img src="https://placehold.co/400" alt="proyecto-1" />
-          </div>
-          <div class="projects__item">
-            <img src="https://placehold.co/400" alt="proyecto-2" />
-          </div>
-          <div class="projects__item">
-            <img src="https://placehold.co/400" alt="proyecto-3" />
-          </div>
+          <figure class="projects__item">
+            <img
+              class="projects__img"
+              src="img/projects/editor__emoji.png"
+              alt="proyecto-1"
+            />
+            <div class="cover">
+              <a class="projects__link" href="https://github.com/K3vR0ld4n/Grupo_06" target="_blank"><i class="fas fa-link"></i> </a>
+              <h4>Editor de Emoji</h4>
+            </div>
+          </figure>
+
+          <figure class="projects__item">
+            <img
+              class="projects__img"
+              src="img/projects/poo__atencion.png"
+              alt="proyecto-2"
+            />
+            <div class="cover">
+              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <h4>Programa de Registros</h4>
+            </div>
+          </figure>
+          <figure class="projects__item">
+            <img
+              class="projects__img"
+              src="img/projects/poo__Bingo.png"
+              alt="proyecto-3"
+            />
+            <div class="cover">
+              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <h4>Bingo para niños</h4>
+            </div>
+          </figure>
+          <figure class="projects__item">
+            <img
+              class="projects__img"
+              src="img/projects/poo__principal.png"
+              alt="proyecto-3"
+            />
+            <div class="cover">
+              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <h4>Aplicacion con POO</h4>
+            </div>
+          </figure>
           <div class="projects__item">
             <iframe
               class="item__video"
-              width="640"
-              height="360"
+              width="500"
+              height="300"
               src="https://www.youtube.com/embed/OIBODIPC_8Y"
             ></iframe>
           </div>
@@ -239,20 +279,20 @@
           magnam placeat voluptate sapiente dolor sint tenetur incidunt
           temporibus quibusdam itaque officiis.
         </p>
-        <form class="contact__form" action="">
-          <input class="form__input" type="text" placeholder="Nombre" />
-          <input class="form__input" type="email" placeholder="Email" />
+        <form class="contact__form" action="" id="form_contact">
+          <input class="form__input" name="nombre" type="text" placeholder="Nombre" required/>
+          <input class="form__input" name="email" type="email" placeholder="Email" required/>
           <textarea
             class="form__input"
             placeholder="Mensaje: "
             cols="30"
             rows="10"
+            name="mensaje"
+            required
           ></textarea>
           <input
             class="form__input form__input--submit"
             type="submit"
-            name=""
-            id=""
           />
         </form>
       </section>

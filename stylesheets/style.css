@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Hind+Madurai:wght@300&family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Hind+Madurai:wght@300&family=Montserrat:wght@700&display=swap");
 /*colores: https://www.happyhues.co/palettes/11 */
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
   color: #716040;
   background-color: #f9f4ef;
   display: flex;
@@ -18,7 +18,7 @@ h1,
 h2,
 h3 {
   color: #020826;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.3em;
   text-align: center;
 }
@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   color: #020826;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-align: inherit;
 }
 
@@ -42,7 +42,6 @@ h6 {
   background-color: #fffffe;
   font-size: 20px;
   line-height: 4;
- 
 }
 .nav--fixed {
   position: fixed;
@@ -87,17 +86,14 @@ section {
   justify-content: center;
   margin: 20px;
   align-items: center;
-  
 }
 .img__profile {
   width: 100%;
   height: auto;
-
 }
 .information__div {
   flex: 1;
   margin: 30px;
- 
 }
 .information__div--left h4 {
   text-align: right;
@@ -170,10 +166,8 @@ section {
 }
 .item__date {
   margin-top: 45px;
-  
 }
 .item__date p {
-  
   display: inline;
   padding: 10px;
   background-color: #0f4b6e;
@@ -193,18 +187,93 @@ section {
   text-align: right;
 }
 
-.projects, .contact, .map,.footer {
+.projects,
+.contact,
+.map,
+.footer {
   background-color: #8c7851;
   color: #fffffe;
 }
-.projects h2, .contact h2, .map h2 {
+.projects h2,
+.contact h2,
+.map h2 {
   color: #fffffe;
 }
 .projects__section {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
+.projects__item {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: 2px;
+  position: relative;
+}
+.projects__img {
+  width: 100%;
+  height: 100%;
+}
+.cover,
+.projects__link,
+.projects__item h4 {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.projects__item:hover .cover,
+.projects__item:hover .projects__link,
+.projects__item:hover h4 {
+  visibility: visible;
+}
+.cover {
+  background-color: rgba(2, 8, 26, 0.7);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.projects__link {
+  display: flex;
+  text-decoration: none;
+  background-color: #f25042;
+  top: 30%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+.projects__item h4 {
+  color: #fffffe;
+  height: 20%;
+  top: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: transparent;
+}
 
+.projects__link i {
+  color: #eaddcf;
+  font-size: 50px;
+}
+.projects__link:hover {
+  background-color: #8c7851;
+}
 
 .contact__form {
   margin: 20px;
@@ -226,13 +295,18 @@ section {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.form__input::placeholder{
-  color:#020826;
+.form__input::placeholder {
+  color: #020826;
 }
 .form__input--submit {
   background-color: #8c7851;
   color: #fffffe;
-
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form__input--submit:hover {
+  border: solid 1px #020826;
 }
 textarea {
   grid-area: textarea;
@@ -243,8 +317,6 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 20px 0 0 0;
-  
-
 }
 .map__iframe {
   margin: 20px 0 0 0;
@@ -252,10 +324,8 @@ textarea {
 }
 
 .footer {
-  
   border: none;
   font-size: 15px;
   text-align: center;
   padding: 20px 0;
-  
 }

@@ -8,3 +8,9 @@ window.addEventListener('scroll', function() {
     barraNavegacion.classList.remove('nav--fixed');
   }
 });
+
+document.getElementById("form_contact").addEventListener("submit", function (event) {
+  event.preventDefault(); 
+  alert("Formulario enviado exitosamente."); 
+  document.getElementById("form_contact").reset();
+});
