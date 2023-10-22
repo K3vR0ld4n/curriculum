@@ -1,16 +1,27 @@
-window.addEventListener('scroll', function() {
-  const barraNavegacion = document.querySelector('.nav');
-  const alturaDeseada = 500; // Ajusta la altura a tu preferencia
+window.addEventListener("scroll", function () {
+  const navContainer = document.querySelector(".nav");
+  const mainContainer = document.getElementById("main");
+  const staticHeight = 500; // Ajusta la altura a tu preferencia
 
-  if (window.scrollY >= alturaDeseada) {
-    barraNavegacion.classList.add('nav--fixed');
+  if (window.scrollY >= staticHeight) {
+    navContainer.classList.add("nav--fixed");
+    mainContainer.style.marginTop = "65px";
   } else {
-    barraNavegacion.classList.remove('nav--fixed');
+    navContainer.classList.remove("nav--fixed");
+    mainContainer.style.marginTop = null;
   }
 });
 
-document.getElementById("form_contact").addEventListener("submit", function (event) {
-  event.preventDefault(); 
-  alert("Formulario enviado exitosamente."); 
-  document.getElementById("form_contact").reset();
-});
+
+
+
+
+/*
+document
+  .getElementById("contact__form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Formulario enviado exitosamente.");
+    document.getElementById("contact__form").reset();
+  });
+  */

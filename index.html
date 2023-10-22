@@ -41,10 +41,14 @@
         <a href="#contact" class="nav__link">Contacto</a>
       </div>
     </nav>
-    <main class="main">
+    <main class="main" id="main">
       <section class="about" id="about">
         <h2>Acerca de mi</h2>
-
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-user"></i></div>
+        </div>
+        
         <div class="about__information">
           <div class="information__div information__div--left">
             <span style="text-align: right">
@@ -92,6 +96,11 @@
       </section>
       <section class="skills" id="skills">
         <h2>Habilidades</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-cog"></i></div>
+        </div>
+        
         <ul class="skills__list">
           <li class="skills__item">
             <b>Lenguajes de programación:</b> <br />
@@ -109,6 +118,10 @@
       </section>
       <section class="education" id="education">
         <h2>Educación</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-book"></i></div>
+        </div>
         <div class="education__area">
           <div class="area__element">
             <div class="area__name">
@@ -186,6 +199,10 @@
       </section>
       <section class="experience" id="experience">
         <h2>Experiencia de Trabajo</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-briefcase"></i></div>
+        </div>
         <div class="experience__section">
           <div class="experience__item experience__item--left">
             <div class="item__date item__date--left"><p>0000/00/00</p></div>
@@ -215,6 +232,10 @@
       </section>
       <section class="projects" id="projects">
         <h2>Proyectos</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-folder"></i></div>
+        </div>
         <div class="projects__section">
           <figure class="projects__item">
             <img
@@ -223,7 +244,12 @@
               alt="proyecto-1"
             />
             <div class="cover">
-              <a class="projects__link" href="https://github.com/K3vR0ld4n/Grupo_06" target="_blank"><i class="fas fa-link"></i> </a>
+              <a
+                class="projects__link"
+                href="https://github.com/K3vR0ld4n/Grupo_06"
+                target="_blank"
+                ><i class="fas fa-link"></i>
+              </a>
               <h4>Editor de Emoji</h4>
             </div>
           </figure>
@@ -235,7 +261,12 @@
               alt="proyecto-2"
             />
             <div class="cover">
-              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <a
+                class="projects__link"
+                href="https://github.com/K3vR0ld4n/POO-P01-G01"
+                target="_blank"
+                ><i class="fas fa-link"></i>
+              </a>
               <h4>Programa de Registros</h4>
             </div>
           </figure>
@@ -246,7 +277,12 @@
               alt="proyecto-3"
             />
             <div class="cover">
-              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <a
+                class="projects__link"
+                href="https://github.com/K3vR0ld4n/POO-P01-G01"
+                target="_blank"
+                ><i class="fas fa-link"></i>
+              </a>
               <h4>Bingo para niños</h4>
             </div>
           </figure>
@@ -257,7 +293,12 @@
               alt="proyecto-3"
             />
             <div class="cover">
-              <a class="projects__link" href="https://github.com/K3vR0ld4n/POO-P01-G01" target="_blank"><i class="fas fa-link"></i> </a>
+              <a
+                class="projects__link"
+                href="https://github.com/K3vR0ld4n/POO-P01-G01"
+                target="_blank"
+                ><i class="fas fa-link"></i>
+              </a>
               <h4>Aplicacion con POO</h4>
             </div>
           </figure>
@@ -273,15 +314,31 @@
       </section>
       <section class="contact" id="contact">
         <h2>Contacto</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad
           modi beatae distinctio expedita, iste nobis reprehenderit voluptatibus
           magnam placeat voluptate sapiente dolor sint tenetur incidunt
           temporibus quibusdam itaque officiis.
         </p>
-        <form class="contact__form" action="" id="form_contact">
-          <input class="form__input" name="nombre" type="text" placeholder="Nombre" required/>
-          <input class="form__input" name="email" type="email" placeholder="Email" required/>
+        <form class="contact__form" action="" id="contact__form">
+          <input
+            class="form__input"
+            name="nombre"
+            type="text"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="form__input"
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
           <textarea
             class="form__input"
             placeholder="Mensaje: "
@@ -292,12 +349,18 @@
           ></textarea>
           <input
             class="form__input form__input--submit"
+            id="button__submit"
             type="submit"
+            value="Enviar"
           />
         </form>
       </section>
       <section class="map" id="map">
         <h2>Zona de Estudio</h2>
+        <div class="spaceBar">
+          <div class="bottom-line"></div>
+          <div class="icon"><i class="fas fa-map"></i></div>
+        </div>
         <iframe
           class="map__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651934657!2d-79.97045872618753!3d-2.1446259978362723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1697418872847!5m2!1ses-419!2sec"

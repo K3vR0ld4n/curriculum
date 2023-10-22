@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 h1,
 h2,
 h3 {
@@ -28,6 +27,39 @@ h6 {
   color: #020826;
   font-family: "Exo 2", sans-serif;
   text-align: inherit;
+}
+
+.spaceBar{
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-line {
+  width: 70%;
+  height: 2px;
+  background-color: #8c7851;
+  margin: 30px 0;
+  position: relative;
+}
+.icon{
+ position: absolute;
+ width: 50px;
+ height: 50px;
+ background-color: #eaddcf;
+ border-radius:50% ;
+ -webkit-border-radius:50% ;
+ -moz-border-radius:50% ;
+ -ms-border-radius:50% ;
+ -o-border-radius:50% ;
+}
+.icon .fas{
+  position: absolute;
+ font-size: 23px;
+ top: 50%; 
+ left: 50%; 
+ transform: translate(-50%, -50%); 
 }
 
 .header {
@@ -76,11 +108,23 @@ h6 {
 
 section {
   padding: 25px;
+  width: 100%;
 }
 
-.about {
-  margin: 40px 0 0 0;
+.about,
+.skills,
+.education,
+.experience,
+.projects,
+.contact,
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 0 0;
 }
+
 .about__information {
   display: flex;
   justify-content: center;
@@ -103,8 +147,10 @@ section {
   text-align: left;
   margin: 10px 0px;
 }
-.about__description {
-  text-align: justify;
+.about__description,
+.contact p {
+  text-align: center;
+  padding: 15px 100px 0;
 }
 
 .skills__list {
@@ -142,7 +188,6 @@ section {
 
 .experience {
   background-color: #fffffe;
-  display: block;
   padding: 50px 25px;
 }
 .experience__section {
@@ -164,6 +209,7 @@ section {
 .item__description {
   grid-area: description;
 }
+
 .item__date {
   margin-top: 45px;
 }
@@ -193,6 +239,12 @@ section {
 .footer {
   background-color: #8c7851;
   color: #fffffe;
+}
+.projects .bottom-line,
+.contact .bottom-line,
+.map .bottom-line{
+ background-color: #fffffe;
+
 }
 .projects h2,
 .contact h2,
@@ -276,7 +328,8 @@ section {
 }
 
 .contact__form {
-  margin: 20px;
+  width: 90%;
+  margin: 50px 20px 0;
   display: grid;
   gap: 20px;
   grid-template-areas:
@@ -313,11 +366,6 @@ textarea {
   resize: none;
 }
 
-.map {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0 0 0;
-}
 .map__iframe {
   margin: 20px 0 0 0;
   width: 100%;
