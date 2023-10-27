@@ -159,13 +159,16 @@ section {
 }
 
 .skills__container {
-  display: flex;
-  flex-direction: column;
+  font-size: 25px;
   margin: 0 60px;
 }
 .skills__list {
   margin: 30px 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .skills__item {
   margin-bottom: 20px;
@@ -198,8 +201,9 @@ meter::-webkit-meter-even-less-good-value {
   background: #0f4b6e; 
 }
 
-.education {
+.experience, .education{
   background-color: #fffffe;
+  padding: 50px 25px;
 }
 .education__area {
   display: grid;
@@ -220,10 +224,7 @@ meter::-webkit-meter-even-less-good-value {
   background-color: #eaddcf;
 }
 
-.experience {
-  background-color: #fffffe;
-  padding: 50px 25px;
-}
+
 .experience__section {
   padding: 30px 0px;
 }
