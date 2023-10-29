@@ -60,13 +60,73 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .header {
-  padding: 0.67em 0;
   text-align: center;
   height: 500px;
-  background-color: #8c7851;
+  display: flex;
+}
+.header__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 40px;
+}
+.header__info h1 {
+  color: #fffffe;
+  text-align: left;
+  margin:0;
+}
+.header__info h4 {
+  color: #fffffe;
+  padding: 5px 0 30px;
+  font-size: 20px;
+  text-align: left;
+}
+.header__img img {
+  height: 500px;
+  width: 600px;
+
+}
+.logo__container{
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  background-color: #fffffe;
+  position: absolute;
+  top: 25%;
+  left: 600px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius:50% ;
+  -webkit-border-radius:50% ;
+  -moz-border-radius:50% ;
+  -ms-border-radius:50% ;
+  -o-border-radius:50% ;
+}
+.header__logo{
+ height: 180px;
+ margin: 10px;
+ overflow: hidden;
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+}
+.header__logo img {
+  height: 100%;
+  
 }
 
 .nav {
@@ -234,7 +294,7 @@ meter::-webkit-meter-even-less-good-value {
   position: absolute;
   top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  
   background-color: #fffffe;
   width: 45px;
   height: 45px;
@@ -243,12 +303,17 @@ meter::-webkit-meter-even-less-good-value {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .gap__circle {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  
   background-color: #0f4b6e;
   width: 36px;
   height: 36px;
@@ -257,6 +322,11 @@ meter::-webkit-meter-even-less-good-value {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .experience__section {
@@ -295,9 +365,13 @@ meter::-webkit-meter-even-less-good-value {
 .experience__icon .icon {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .experience__icon .icon .fas {
   font-size: 18px;
@@ -341,6 +415,7 @@ meter::-webkit-meter-even-less-good-value {
   -o-transform: translate(-50%, 0);
 }
 
+.header,
 .projects,
 .contact,
 .map,
