@@ -81,7 +81,7 @@ h6 {
 .header__info h1 {
   color: #fffffe;
   text-align: left;
-  margin:0;
+  margin: 0;
 }
 .header__info h4 {
   color: #fffffe;
@@ -92,9 +92,8 @@ h6 {
 .header__img img {
   height: 500px;
   width: 600px;
-
 }
-.logo__container{
+.logo__container {
   height: 200px;
   width: 200px;
   align-items: center;
@@ -108,25 +107,24 @@ h6 {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  border-radius:50% ;
-  -webkit-border-radius:50% ;
-  -moz-border-radius:50% ;
-  -ms-border-radius:50% ;
-  -o-border-radius:50% ;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.header__logo{
- height: 180px;
- margin: 10px;
- overflow: hidden;
- border-radius: 50%;
- -webkit-border-radius: 50%;
- -moz-border-radius: 50%;
- -ms-border-radius: 50%;
- -o-border-radius: 50%;
+.header__logo {
+  height: 180px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .header__logo img {
   height: 100%;
-  
 }
 
 .nav {
@@ -197,8 +195,13 @@ section {
   align-items: center;
 }
 .img__profile {
-  width: 100%;
-  height: auto;
+  height: 500px;
+  width: auto;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
 }
 .information__div {
   flex: 1;
@@ -294,7 +297,7 @@ meter::-webkit-meter-even-less-good-value {
   position: absolute;
   top: 35%;
   left: 50%;
-  
+
   background-color: #fffffe;
   width: 45px;
   height: 45px;
@@ -313,7 +316,7 @@ meter::-webkit-meter-even-less-good-value {
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   background-color: #0f4b6e;
   width: 36px;
   height: 36px;
